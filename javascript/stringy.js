@@ -8,15 +8,14 @@ The size will always be positive and will only use whole numbers.
 */
 
 function stringy(size) {
-    // your code here
-    var myStr = [ ];
-    for (var i = 1; i <= size; i++) {
-      if (i % 2 === 0) {
-        myStr.push('0');
-      }
-      else {
-        myStr.push('1');
-      }
+  var myStr = [ ];
+  for (var i = 1; i <= size; i++) {
+    if (i % 2 === 0) {
+      myStr.push('0');
     }
-    return myStr.join('');
+    else {
+      myStr.push('1');
+    }
   }
+  return myStr.join('');
+}
